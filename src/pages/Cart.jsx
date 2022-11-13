@@ -32,7 +32,7 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
                             <div className="cart__body">
                                 {cart.map(book => {
                                     return (
-                                        <div className="cart__item">
+                                        <div className="cart__item" key={book.id}>
                                             <div className="cart__book">
                                                 <img
                                                     src={book.url}
